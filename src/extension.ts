@@ -35,7 +35,9 @@ function getActiveWorkspaceOriginInfo(): string | null {
             return lastOriginInfo;
         }
         const selectedWorkspace = activeWorkspace ?? workspaceFolders[0];
-        return getOriginInfo(selectedWorkspace.uri.fsPath);
+        let originInfo = getOriginInfo(selectedWorkspace.uri.fsPath);
+        lastOriginInfo = originInfo;
+        return originInfo;
     } catch (error) {
         console.error("Error getting git origin info:", error);
     }
