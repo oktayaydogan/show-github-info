@@ -2,7 +2,7 @@
 	"name": "show-github-info",
 	"displayName": "Show Git Remote Info",
 	"description": "Show git remote info (as user/repo) in status bar",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"publisher": "oktayaydoan",
 	"private": true,
 	"license": "MIT",
